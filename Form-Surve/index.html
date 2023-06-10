@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="syles.css">
+    <title>Form Surve</title>
+</head>
+<body>
+   <div class="container">
+    <header class="header">
+        <h1 id="title" class="text-center">freeCodeCamp Surfy Form</h1>
+        <p id="descrption" class="descrption text-center">Thsnk you for time the help ud improve the platform</p>
+    </header>
+    <form id="survey-form">
+        <div class="form-group">
+            <label for="name" id="name-label">Name</label>
+            <input type="text" name="name" class="form-control" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+            <label for="email" id="email-label">Email</label>
+            <input type="email" name="email" class="form-control" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+            <label for="number" id="number-label">Ege <span class="clue">(optional)</span></label>
+            <input type="number" name="ge" class="form-control" placeholder="Ege">
+        </div>
+        <div class="form-group">
+            <p>which option best descrbes your curren role?</p>
+            <select name="role" id="dropdown" class="form-control" required>
+                <option value="student">Student</option>
+                <option value="job">Full Time Job</option>
+                <option value="learner">Full Time Learner</option>
+                <option value="preferNo">Prefer not to say</option>
+                <option value="other">Othet</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <p>Would you recommendate freeCodeCamp t a friend?</p>
+            <label for=""><input type="radio" name="user-recommendate" value="definetely" class="input-radio" checked>
+                Definetely</label>
+            <label for=""><input type="radio" name="user-recommendate" value="maybe" class="input-radio" checked>
+                Maybe</label>
+            <label for=""><input type="radio" name="user-recommendate" value="not-sure" class="input-radio" checked>
+                Not Sure</label>
+        </div>
+        <div class="form-group">
+            <p>Whatwould you lite to sure inproved? <span class="clue">(Check all that apply)</span></p>
+            <label for=""><input type="checkbox" name="prefer" value="front-end-projects" class="input-checkbok"> Front-end Projects</label>
+            <label for=""><input type="checkbox" name="prefer" value="back-end-projects" class="input-checkbok"> Back-end Projects</label>
+            <label for=""><input type="checkbox" name="prefer" value="data-visualization" class="input-checkbok">Data Vistualization</label>
+            <label for=""><input type="checkbox" name="prefer" value="challenge" class="input-checkbok">Challenge</label>
+            <label for=""><input type="checkbox" name="prefer" value="open-suse-community" class="input-checkbok">Open Sure Community</label>
+            <label for=""><input type="checkbox" name="prefer" value="gitter-help-rooms" class="input-checkbok">Gitter help rooms</label>
+            <label for=""><input type="checkbox" name="prefer" value="videos" class="input-checkbok">Videos</label>
+            <label for=""><input type="checkbox" name="prefer" value="city-meetubs" class="input-checkbok">City Meetups</label>
+            <label for=""><input type="checkbox" name="prefer" value="wiki" class="input-checkbok">Wiki</label>
+            <label for=""><input type="checkbox" name="prefer" value="form" class="input-checkbok">Form</label>
+            <label for=""><input type="checkbox" name="prefer" value="additional-course" class="input-checkbok">Additional Course</label>
+        </div>
+        <div class="form-group">
+            <p>Any comments sugistions?</p>
+            <textarea name="comments" class="input-textarea" id="comments" placeholder="Enter your cemment here..."></textarea>
+        </div>
+        <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">Submit</button>
+        </div>
+    </form>
+   </div>
+</body>
+</html>
